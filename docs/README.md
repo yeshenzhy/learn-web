@@ -4,11 +4,11 @@ heroImage: /favicon.png
 actionText: 开启学习之旅吧 →
 actionLink: /vue3/introduction
 features:
-- title: 开箱即用
-  details: 无需繁杂的配置，即可进行文档编写。
-- title: 功能完善
-  details: 仿照element-ui文档，满足个人及企业对组件库文档的需求。
-- title: 轻松上手
-  details: 你甚至都不需要阅读vuepress文档即可快速上手，每个文件，每行代码都有详细的注释说明。
-footer: MIT Licensed | Copyright © 2018 present shotCat
+- title: vue3
+  details: 一个易用，灵活，高效的渐进式JavaScript 框架
+- title: vite
+  details: 下一代前端开发与构建工具
+- title: TypeScript
+  details: 是JavaScript类型的超集，它可以编译成纯JavaScript。TypeScript可以在任何浏览器，任何计算器和任何操作系统上运行。
+footer: MIT Licensed | Copyright © 2018 present
 ---
