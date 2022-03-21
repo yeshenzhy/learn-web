@@ -28,6 +28,6 @@ jobs:
     - name: 部署
       uses: JamesIves/github-pages-deploy-action@releases/v3 # 这个action会根据配置自动推送代码到指定分支
       with:
-        ACCESS_TOKEN: ${{ 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 }} # 指定密钥，即在第一步中设置的
+        ACCESS_TOKEN: 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 # 指定密钥，即在第一步中设置的
         BRANCH: gh-pages  ##指定推送到的远程分支
         FOLDER: docs/.vuepress/dist # 指定构建之后要推送哪个目录的代码 如这里vuepress构建之后到产物在 docs 文件夹中
