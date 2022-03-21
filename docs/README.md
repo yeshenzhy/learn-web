@@ -2,7 +2,7 @@
 home: true
 heroImage: /favicon.png
 actionText: 开启学习之旅吧 →
-actionLink: /vue3/introduction
+actionLink: /vue3/install
 features:
 - title: vue3
   details: 一个易用，灵活，高效的渐进式JavaScript 框架
