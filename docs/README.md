@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /favicon.png
-actionText: 开启学习之旅zhy →
+actionText: 开启学习之旅zhy yeshen →
 actionLink: /vue3/introduction
 features:
 - title: 开箱即用
