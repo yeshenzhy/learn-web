@@ -106,7 +106,6 @@ module.exports = {
   markdown: {
     lineNumbers: true // 代码块显示行号
   },
-
   plugins: [
     // 官方回到顶部插件
     '@vuepress/back-to-top',
@@ -117,16 +116,16 @@ module.exports = {
     // vssue 一个借助issue的评论插件 具体配置见https://vssue.js.org/zh/
     ['@vssue/vuepress-plugin-vssue', {
       // 设置 `platform` 而不是 `api` 我这里是在github平台
-      platform: 'github',
+      platform: 'github-v4',
 
       // owner与repo配置 https://github.com/${owner}/${repo}
       // 例如我的仓库地址为https://github.com/1011cat/shotCat_doc 则owner为1011cat，repo为shotCat_doc
-      owner: 'your owner',
-      repo: 'your repo',
-
+      owner: 'yeshenzhy',
+      repo: 'learn-web',
+      autoCreateIssue: true,
       // 填写自己的OAuth App 信息。详见https://vssue.js.org/zh/options/#repo
-      clientId: 'clientId',
-      clientSecret: 'clientSecret',
+      clientId: '06a5342747e0e574df62',
+      clientSecret: '28d7f5d3d6fbc1405a3c57a833b061b32e1f7d4f',
       locale: 'zh', //使用的语言  这里是简体中文
       baseURL: 'https://github.com'
     }] //平台的 base URL
