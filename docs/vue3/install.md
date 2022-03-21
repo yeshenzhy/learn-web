@@ -36,7 +36,8 @@ vue create 项目名字（不能包含大写）
 
 ## 项目启动
 
-<Vssue/>
 1.进入到工程目录
 2.npm run serve启动项目
 ![image.png](../.vuepress/public/vue3/6.png)
+
+<Vssue/>

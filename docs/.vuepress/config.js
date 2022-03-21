@@ -116,7 +116,7 @@ module.exports = {
     // vssue 一个借助issue的评论插件 具体配置见https://vssue.js.org/zh/
     ['@vssue/vuepress-plugin-vssue', {
       // 设置 `platform` 而不是 `api` 我这里是在github平台
-      platform: 'github-v4',
+      platform: 'github-v3',
 
       // owner与repo配置 https://github.com/${owner}/${repo}
       // 例如我的仓库地址为https://github.com/1011cat/shotCat_doc 则owner为1011cat，repo为shotCat_doc
