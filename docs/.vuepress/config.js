@@ -10,7 +10,7 @@
 // 为了更好的理解，以下所有配置，注释，须配合查看页面实际效果！
 
 module.exports = {
-  title: '前端技术文档', //标题
+  title: '夜神丶前端技术文档', //标题
   description: '在这里你可能会发现新的大陆', //描述
   base: '/learn-web/', //基本url
   theme: 'reco',
@@ -28,7 +28,7 @@ module.exports = {
   //主题配置
   themeConfig: {
     //顶部导航栏配置
-    subSidebar: 'auto',
+    subSidebar: 'auto', // 配置则会在右侧生成导航
     nav: [
       { text: '主页', link: '/' },  // 内部链接 以docs为根目录
       {
@@ -281,8 +281,13 @@ module.exports = {
       // 悬浮窗样式
       floatStyle:{ bottom: '10px', 'z-index': '999999' }
     }
-  ]
-
+  ],
+  // 动态标题显示
+  ['dynamic-title', {
+    showText: '客官欢迎回来~',
+    hideText: '客官不要走嘛~',
+    recoverTime: 2000,
+ }]
   ]
 
 
