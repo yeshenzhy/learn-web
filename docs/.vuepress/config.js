@@ -108,7 +108,7 @@ module.exports = {
   },
   plugins: [
     // 官方回到顶部插件
-    '@vuepress/back-to-top',
+    '@vuepress-reco/vuepress-plugin-back-to-top',
 
     //官方图片放大组件 目前是所有img都可以点击放大。具体配置见https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html
     ['@vuepress/medium-zoom', { selector: 'img' }],
@@ -138,14 +138,52 @@ module.exports = {
    [
     '@vuepress-reco/vuepress-plugin-kan-ban-niang',
     {
-      theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16']
+      theme: ['miku', 'blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
+      clean: true,
+      modelStyle: {
+        position: "fixed",
+        right: "65px",
+        bottom: "0px",
+        zIndex: 99999,
+        messages:  {
+          welcome: '欢迎来到夜神丶的前端技术文档',
+          home: '心里的花，我想要带你回家。',
+          theme: '好吧，希望你能喜欢我的其他小伙伴。',
+          close: '你知道我喜欢吃什么吗？痴痴地望着你。'
+        }
+      }
     }
   ],
   ['cursor-effects', {
     size: 2, // size of the particle, default: 2
     shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
     zIndex: 999999999, // z-index property of the canvas, default: 999999999
-	}]
+	}],
+  [
+    '@vuepress-reco/vuepress-plugin-bgm-player',
+    {
+      audios: [
+        {
+          name: '강남역 4번 출구',
+          artist: 'Plastic / Fallin` Dild',
+          url: 'https://assets.smallsunnyfox.com/music/2.mp3',
+          cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+        },
+        {
+          name: '用胳膊当枕头',
+          artist: '최낙타',
+          url: 'https://assets.smallsunnyfox.com/music/3.mp3',
+          cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
+        }
+      ] ,
+      // 是否默认缩小
+      autoShrink: true ,
+      // 缩小时缩为哪种模式
+      shrinkMode: 'float',
+      // 悬浮窗样式
+      floatStyle:{ bottom: '10px', 'z-index': '999999' }
+    }
+  ]
 
   ]
 
