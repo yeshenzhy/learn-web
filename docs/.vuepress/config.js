@@ -111,7 +111,7 @@ module.exports = {
     '@vuepress-reco/vuepress-plugin-back-to-top',
 
     //官方图片放大组件 目前是所有img都可以点击放大。具体配置见https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html
-    ['@vuepress/medium-zoom', { selector: 'img' }],
+    ['@vuepress/medium-zoom', { selector: '.theme-reco-content :not(a) > img' }],
 
     // vssue 一个借助issue的评论插件 具体配置见https://vssue.js.org/zh/
     ['@vssue/vuepress-plugin-vssue', {
