@@ -158,6 +158,11 @@ module.exports = {
               collapsable: false,
             },
             {
+              title: '其它Composition API',
+              path: 'otherApi',
+              collapsable: false,
+            },
+            {
               title: '定义组件的name',
               path: 'componentName',
               collapsable: false,
