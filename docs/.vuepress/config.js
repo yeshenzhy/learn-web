@@ -109,15 +109,14 @@ module.exports = {
   plugins: [
     // 官方回到顶部插件
     '@vuepress-reco/vuepress-plugin-back-to-top',
-
+    // 代码扩展
+    '@vuepress-reco/extract-code',
     //官方图片放大组件 目前是所有img都可以点击放大。具体配置见https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html
     ['@vuepress/medium-zoom', { selector: '.theme-reco-content :not(a) > img' }],
-
     // vssue 一个借助issue的评论插件 具体配置见https://vssue.js.org/zh/
     ['@vssue/vuepress-plugin-vssue', {
       // 设置 `platform` 而不是 `api` 我这里是在github平台
       platform: 'github-v4',
-
       // owner与repo配置 https://github.com/${owner}/${repo}
       // 例如我的仓库地址为https://github.com/1011cat/shotCat_doc 则owner为1011cat，repo为shotCat_doc
       owner: 'yeshenzhy',
@@ -129,12 +128,14 @@ module.exports = {
       locale: 'zh', //使用的语言  这里是简体中文
       baseURL: 'https://github.com'
     }], //平台的 base URL
+    // 代码复制
     ["vuepress-plugin-nuggets-style-copy", {
       copyText: "复制代码",
       tip: {
           content: "复制成功"
       }
    }],
+  //  看板娘
    [
     '@vuepress-reco/vuepress-plugin-kan-ban-niang',
     {
@@ -154,11 +155,13 @@ module.exports = {
       }
     }
   ],
+  // 鼠标光效
   ['cursor-effects', {
     size: 2, // size of the particle, default: 2
     shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
     zIndex: 999999999, // z-index property of the canvas, default: 999999999
 	}],
+  // 背景音乐
   [
     '@vuepress-reco/vuepress-plugin-bgm-player',
     {

@@ -1477,6 +1477,11 @@
     valine "^1.4.14"
     vssue "^1.4.6"
 
+"@vuepress-reco/vuepress-plugin-extract-code@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/@vuepress-reco/vuepress-plugin-extract-code/-/vuepress-plugin-extract-code-1.0.4.tgz#c50b521d8a5d1c9dfd705e245a7e920a80315a32"
+  integrity sha512-J4Cas3JRxs0TnfjtzQ+3bl7iNwL/va9cOXMtpayse3sETul863BwYk1vEBXRAZMiLmbmWqnBrGIrJGmD/TnO5Q==
+
 "@vuepress-reco/vuepress-plugin-kan-ban-niang@^1.0.5":
   version "1.0.5"
   resolved "https://registry.npmmirror.com/@vuepress-reco/vuepress-plugin-kan-ban-niang/-/vuepress-plugin-kan-ban-niang-1.0.5.tgz#73b47094f1a07af05923fe9ae6c25a4c33586168"
