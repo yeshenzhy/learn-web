@@ -63,15 +63,105 @@ module.exports = {
               collapsable: false,
             },
             {
-              title: '快速上手',
-              path: 'quickStart',
+              title: '生命周期',
+              path: 'lifeCycle',
               collapsable: false,
             },
             {
-              title: '几点说明',
-              path: 'tips',
+              title: '文件结构',
+              path: 'fileStructure',
               collapsable: false,
-            }
+            },
+            {
+              title: 'data',
+              path: 'data',
+              collapsable: false,
+            },
+            {
+              title: 'method方法',
+              path: 'method',
+              collapsable: false,
+            },
+            {
+              title: 'computed计算属性',
+              path: 'computed',
+              collapsable: false,
+            },
+            {
+              title: 'watch监听函数',
+              path: 'watch',
+              collapsable: false,
+            },
+            {
+              title: 'props父传子',
+              path: 'props',
+              collapsable: false,
+            },
+            {
+              title: 'emit传父',
+              path: 'emit',
+              collapsable: false,
+            },
+            {
+              title: 'v-model',
+              path: 'vModel',
+              collapsable: false,
+            },
+            {
+              title: 'nextTick',
+              path: 'nextTick',
+              collapsable: false,
+            },
+            {
+              title: '子组件ref变量和defineExpose',
+              path: 'refDefineExpose',
+              collapsable: false,
+            },
+            {
+              title: 'slot插槽',
+              path: 'slot',
+              collapsable: false,
+            },
+            {
+              title: 'useRoute和useRouter',
+              path: 'router',
+              collapsable: false,
+            },
+            {
+              title: '路由导航守卫',
+              path: 'navigationGuard',
+              collapsable: false,
+            },
+            {
+              title: 'store',
+              path: 'store',
+              collapsable: false,
+            },
+            {
+              title: '原型绑定与组件内使用',
+              path: 'prototype',
+              collapsable: false,
+            },
+            {
+              title: 'v-bind() CSS变量注入',
+              path: 'vBind',
+              collapsable: false,
+            },
+            {
+              title: 'provide和inject',
+              path: 'provideInject',
+              collapsable: false,
+            },
+            {
+              title: '对 await 的支持',
+              path: 'await',
+              collapsable: false,
+            },
+            {
+              title: '定义组件的name',
+              path: 'componentName',
+              collapsable: false,
+            },
           ]
         }
       ],
@@ -197,4 +287,4 @@ module.exports = {
   //   config.resolve.alias
   //     .set('@',resolve('src'))
   // }
-};
+}
