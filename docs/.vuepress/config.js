@@ -35,7 +35,7 @@ module.exports = {
         text: 'API文档',
         items: [
           { text: 'Vue3文档', link: '/vue3/install' },
-          { text: 'Vite文档', link: '/vite/introduction' },
+          { text: 'Vite文档', link: '/vite/whyVite' },
           { text: 'TypeScript文档', link: 'https://www.tslang.cn/index.html' },
           { text: 'ThingJs文档', link: 'http://docs.thingjs.com/' }
         ]
@@ -194,11 +194,11 @@ module.exports = {
       '/vite/': [
         {
           title: 'vite文档',
-          collapsable: true,
+          collapsable: false,
           children: [
             {
-              title: '简介',
-              path: 'introduction',
+              title: '为什么选Vite？',
+              path: 'whyVite',
               collapsable: false,
             },
             {
@@ -207,8 +207,29 @@ module.exports = {
               collapsable: false,
             },
             {
-              title: '几点说明',
-              path: 'tips',
+              title: '配置文件详解',
+              path: 'config',
+              collapsable: false,
+            },
+          ]
+        },
+        {
+          title: '开发FAQ',
+          collapsable: false,
+          children: [
+            {
+              title: 'node相关问题',
+              path: 'nodeRequire',
+              collapsable: false,
+            },
+            {
+              title: '静态资源目录问题',
+              path: 'staticAssets',
+              collapsable: false,
+            },
+            {
+              title: '关于vue全局组件注册问题',
+              path: 'vueComponents',
               collapsable: false,
             }
           ]
