@@ -20,7 +20,9 @@ export default {
   },
 
   methods: {
-
+    as(){
+      
+    }
   }
 };
 </script>

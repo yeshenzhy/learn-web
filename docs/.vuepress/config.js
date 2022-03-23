@@ -10,7 +10,7 @@
 // 为了更好的理解，以下所有配置，注释，须配合查看页面实际效果！
 
 module.exports = {
-  title: '夜神丶前端技术文档', //标题
+  title: '前端技术文档', //标题
   description: '在这里你可能会发现新的大陆', //描述
   base: '/learn-web/', //基本url
   theme: 'reco',
@@ -54,7 +54,7 @@ module.exports = {
     sidebar: {
       '/vue3/': [
         {
-          title: 'vue3文档',
+          title: 'vue3 Api文档',
           collapsable: false,
           children: [
             {
@@ -168,12 +168,33 @@ module.exports = {
               collapsable: false,
             },
           ]
+        },
+        {
+          title: 'vue3 好用的神器',
+          collapsable: false,
+          children: [
+            {
+              title: 'setup name 增强',
+              path: 'setupName',
+              collapsable: false,
+            },
+            {
+              title: 'API 自动导入',
+              path: 'autoImport',
+              collapsable: false,
+            },
+            {
+              title: '自动导入图片',
+              path: 'viteImages',
+              collapsable: false,
+            },
+          ]
         }
       ],
       '/vite/': [
         {
           title: 'vite文档',
-          collapsable: false,
+          collapsable: true,
           children: [
             {
               title: '简介',
