@@ -12,7 +12,7 @@ const prototype = app.config.globalProperties
 
 // 绑定参数
 prototype.name = 'Jerry'
-复制代码
+
 ```
 
 ### 组件内使用

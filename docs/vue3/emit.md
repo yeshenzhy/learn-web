@@ -30,7 +30,7 @@
     emit('updateName', 'Tom')
   }
 </script>
-复制代码
+
 ```
 
 ### 父组件

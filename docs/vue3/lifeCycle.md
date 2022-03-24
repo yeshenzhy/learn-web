@@ -61,7 +61,7 @@ export default {
 }
 </script>
 
-复制代码
+
 ```
 
 LifeCycles.vue
@@ -106,10 +106,8 @@ export default {
 }
 </script>
 
-复制代码
-```
 
-![vue3-optionAPI.gif](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5240f1425e4446cab4473d709168334~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp)
+```
 
 ## 4.Composition API基本使用
 
@@ -156,16 +154,16 @@ export default {
 }
 </script>
 
-复制代码
+
 ```
 
-![vue3-compositionAPI.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/26567e35a75f4416b8c3ef187218a464~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp)
+
 
 ## 5.为什么会有Composition API？
 
 ## 为了更好的代码组织
 
-假设一个vue组件是一个大型组件，它的内部有很多处理逻辑的关注点(对应Options API)。有没有一种碎片化的感觉，这种碎片化使得开发者很难去理解和维护组件。 Composition API的出现就是解决这个问题的，它将某个逻辑关注点相关的代码全都放在一个函数里，这样当需要修改一个功能时，就不需要在文件中跳来跳去。 ![1161361-20210203191859382-111855115.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/68d311f558724536977084dd13f536b6~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp)
+假设一个vue组件是一个大型组件，它的内部有很多处理逻辑的关注点(对应Options API)。有没有一种碎片化的感觉，这种碎片化使得开发者很难去理解和维护组件。 Composition API的出现就是解决这个问题的，它将某个逻辑关注点相关的代码全都放在一个函数里，这样当需要修改一个功能时，就不需要在文件中跳来跳去。 
 
 ### 示例对比
 
@@ -206,7 +204,7 @@ export default {
     }
 }
 </script>
-复制代码
+
 ```
 
 改成Composition API之后
@@ -246,7 +244,7 @@ export default {
     }
 }
 </script>
-复制代码
+
 ```
 
 ## 为了更好的逻辑复用

@@ -36,7 +36,7 @@ module.exports = {
         items: [
           { text: 'Vue3文档', link: '/vue3/install' },
           { text: 'Vite文档', link: '/vite/whyVite' },
-          { text: 'TypeScript文档', link: 'https://www.tslang.cn/index.html' },
+          { text: 'TypeScript文档', link: '/typescript/什么是TypeScript' },
           { text: 'ThingJs文档', link: 'http://docs.thingjs.com/' }
         ]
       },
@@ -234,7 +234,91 @@ module.exports = {
             }
           ]
         }
-      ]
+      ],
+      '/typescript/': [
+        {
+          title: 'TypeScript文档',
+          collapsable: false,
+          children: [
+            {
+              title: '什么是TypeScript',
+              path: '什么是TypeScript',
+              collapsable: false,
+            },
+            {
+              title: '快速安装',
+              path: '快速安装',
+              collapsable: false,
+            },
+            {
+              title: 'TypeScript基础类型',
+              path: 'TypeScript基础类型',
+              collapsable: false,
+            },
+            {
+              title: 'TypeScript断言',
+              path: 'TypeScript断言',
+              collapsable: false,
+            },
+            {
+              title: '类型守卫',
+              path: '类型守卫',
+              collapsable: false,
+            },
+            {
+              title: '联合类型和类型别名',
+              path: '联合类型和类型别名',
+              collapsable: false,
+            },
+            {
+              title: '交叉类型',
+              path: '交叉类型',
+              collapsable: false,
+            },
+            {
+              title: 'TypeScript函数',
+              path: 'TypeScript函数',
+              collapsable: false,
+            },
+            {
+              title: 'TypeScript数组',
+              path: 'TypeScript数组',
+              collapsable: false,
+            },
+            {
+              title: 'TypeScript对象',
+              path: 'TypeScript对象',
+              collapsable: false,
+            },
+            {
+              title: 'TypeScript接口',
+              path: 'TypeScript接口',
+              collapsable: false,
+            },
+            {
+              title: 'TypeScript类',
+              path: 'TypeScript类',
+              collapsable: false,
+            },
+            {
+              title: 'TypeScript泛型',
+              path: 'TypeScript泛型',
+              collapsable: false,
+            },
+            {
+              title: 'TypeScript高级类型（Utility Types）',
+              path: 'TypeScript高级类型',
+              collapsable: false,
+            },
+            {
+              title: '编译上下文',
+              path: '编译上下文',
+              collapsable: false,
+            },
+          ]
+        }
+      ],
+
     },
     sidebarDepth: 1, // 将同时提取markdown中h2，显示在侧边栏上
     lastUpdated: '最后更新于' // 文档更新时间：每个文件git最后提交的时间
@@ -267,7 +351,7 @@ module.exports = {
     }], //平台的 base URL
     // 代码复制
     ["vuepress-plugin-nuggets-style-copy", {
-      copyText: "复制代码",
+      copyText: "",
       tip: {
           content: "复制成功"
       }

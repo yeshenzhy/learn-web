@@ -27,7 +27,7 @@
   const titleSlot = reactive(slots.title && slots.title().length)
   console.log(titleSlot) // 3
 </script>
-复制代码
+
 ```
 
 ### 父组件

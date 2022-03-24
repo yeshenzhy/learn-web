@@ -8,7 +8,7 @@ toRefs 转换响应式对象中所有属性为单独响应式数据
 
 ```js
 import { ref, watch } from 'vue'
-复制代码
+
 setup() {
     const number = ref(0)
     
@@ -18,7 +18,7 @@ setup() {
     })
     return { number }
   }
-复制代码
+
 ```
 
 - toRef是函数，转换**响应式对象**中**某个**属性为单独响应式数据，并且**值是关联的**。
@@ -42,7 +42,7 @@ setup() {
       obj.name = '大象'
       console.log('obj变了吗', obj)
     }
-复制代码
+
 ```
 
 ## 3. 监听多个参数
@@ -60,7 +60,7 @@ setup() {
     })
     return { number, msg }
   }
-复制代码
+
 ```
 
 ## 4. 深度监听和立即执行
@@ -162,7 +162,7 @@ setup() {
 
 ### 1.停止监听
 
-当 `watchEffect` 在组件的 [setup()](https://link.juejin.cn?target=https%3A%2F%2Fv3.cn.vuejs.org%2Fguide%2Fcomposition-api-setup.html) 函数或[生命周期钩子](https://link.juejin.cn?target=https%3A%2F%2Fv3.cn.vuejs.org%2Fguide%2Fcomposition-api-lifecycle-hooks.html)被调用时，侦听器会被链接到该组件的生命周期，并在组件卸载时自动停止。
+当 `watchEffect` 在组件的 [setup()](https://v3.cn.vuejs.org/guide/composition-api-setup.html) 函数或[生命周期钩子](https://v3.cn.vuejs.org/guide/composition-api-lifecycle-hooks.html)被调用时，侦听器会被链接到该组件的生命周期，并在组件卸载时自动停止。
 
 在一些情况下，也可以显式调用返回值以停止侦听：
 
@@ -191,7 +191,7 @@ watchEffect(onInvalidate => {
     token.cancel()
   })
 })
-复制代码
+
 ```
 
 我们之所以是通过传入一个函数去注册失效回调，而不是从回调返回它，是因为返回值对于异步错误处理很重要。
@@ -206,7 +206,7 @@ watchEffect(async onInvalidate => {
   }) // 我们在Promise解析之前注册清除函数
   data.value = await fetchData(props.id)
 })
-复制代码
+
 ```
 
 我们知道异步函数都会隐式地返回一个 Promise，但是清理函数必须要在 Promise 被 resolve 之前被注册。另外，Vue 依赖这个返回的 Promise 来自动处理 Promise 链上的潜在错误。

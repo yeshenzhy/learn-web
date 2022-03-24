@@ -15,7 +15,7 @@
 
 ### 解决办法
 
-可以用社区的兼容浏览器的包进行 **polyfill**，目前作者项目中主要用到 **process** 、**event**，**process** 可以用 [process-es6](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fcalvinmetcalf%2Fnode-process-es6) 做兼容。
+可以用社区的兼容浏览器的包进行 **polyfill**，目前作者项目中主要用到 **process** 、**event**，**process** 可以用 [process-es6](https://github.com/calvinmetcalf/node-process-es6) 做兼容。
 
 ```js
 import process from 'process-es6/browser.js'
@@ -24,7 +24,7 @@ global.process = process
 
 ```
 
-**event** 可以通过 [events](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fbrowserify%2Fevents) 做兼容，装完就可以了，不需要额外配置。
+**event** 可以通过 [events](https://github.com/browserify/events) 做兼容，装完就可以了，不需要额外配置。
 
 ## 3. xxx does not provide an export named 'xxx'
 
@@ -41,7 +41,7 @@ module.exports = require('./xxx');
 
 ### 解决办法
 
-好在官方已经提供了解决办法，参考这次 [issue](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fvitejs%2Fvite%2Fissues%2F813) 。`viteConfig` 里提供了 `optimizeDeps` 参数，专门来处理这些 `cjs` 导出的包，使他变为 `ESM` 导出，像这样。
+好在官方已经提供了解决办法，参考这次 [issue](https://github.com/vitejs/vite/issues/813) 。`viteConfig` 里提供了 `optimizeDeps` 参数，专门来处理这些 `cjs` 导出的包，使他变为 `ESM` 导出，像这样。
 
 ```js
 //viteConfig.js
@@ -111,6 +111,6 @@ Edge >=16
 
 也就是说，这些版本以下的都是不支持 `module` 属性的，好在我们项目不需要兼容古老的浏览器，像 `IE` 各种版本，都不需要支持，这也是为啥我们敢重构的原因之一。
 
-当然，官方也提供了低浏览器版本的解决方案，[@vitejs/plugin-legacy](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fvitejs%2Fvite%2Ftree%2Fmain%2Fpackages%2Fplugin-legacy)，这个插件可以让 `Vite` 打包的项目在老的浏览器里面运行，主要用  `@babel/preset-env` 来进行转换，不过用了之后，打包速度会明显变慢，这点看取舍了。
+当然，官方也提供了低浏览器版本的解决方案，[@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy)，这个插件可以让 `Vite` 打包的项目在老的浏览器里面运行，主要用  `@babel/preset-env` 来进行转换，不过用了之后，打包速度会明显变慢，这点看取舍了。
 
 <Vssue/>

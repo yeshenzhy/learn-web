@@ -34,8 +34,6 @@ export default defineComponent({
 </style>
 ```
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1de9070dda424936820d3e4bcf025822~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp)
-
 ## vue3中获取多个dom, 获取多个dom得用方法
 
 ```vue
@@ -76,7 +74,6 @@ let name = ref<any>('')
 
 ```
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0aa700e701f34bceabca0e7d2b0abd77~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp)
 
 ## 在vue3中, 用vue2的方式获取dom
 
@@ -87,11 +84,6 @@ let name = ref<any>('')
   }
 
 ```
-
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fb3a6c89b34645e191f26cd3cdb2353d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp)
-
-
-
 
 
 <Vssue/>

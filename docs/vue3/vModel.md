@@ -27,7 +27,7 @@
     emit('update:age', 30)
   }
 </script>
-复制代码
+
 ```
 
 ### 父组件

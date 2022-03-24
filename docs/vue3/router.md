@@ -14,7 +14,7 @@
   // 路由跳转
   router.push('/newPage')
 </script>
-复制代码
+
 ```
 
 <Vssue/>
