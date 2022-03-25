@@ -9,7 +9,7 @@ title: 1.0 Button 按钮
 
 <!-- highlight-code为引入的第三方代码高亮组件，里面包裹的就是上面示例组件的代码 -->
 
-<baseComponent-codeBox title="按钮类型" description="按钮类型通过设置type为primary、success、info、warning、danger、text创建不同样式的按钮，不设置为默认样式。" onlineLink="https://codepen.io/1011cat/pen/KjEOWO">
+<baseComponent-codeBox title="按钮类型" description="按钮类型通过设置type为primary、success、info、warning、danger、text创建不同样式的按钮，不设置为默认样式。"onlineLink="https://codepen.io/1011cat/pen/KjEOWO">
   <demo-catButton-type_catButton></demo-catButton-type_catButton>
   <highlight-code slot="codeText" lang="vue">
     <template>
